@@ -19,6 +19,7 @@ var form_data = new FormData();
     }).then(function(data){
    if(data.login_user_name == name.trim() && data.login_password == password.trim()){
   //   console.log(data); 
+     window.location.href = 'database.html';
 document.getElementById('_error').classList.remove("_error");
 document.getElementById('_error').classList.add("_success");
 document.getElementById('_error').textContent = 'Login Successfully !';
@@ -28,7 +29,7 @@ cc.setCookie("login_user_name",data.login_user_name,30);
 var ss = new Session();
 ss.setSession("login_user_name",data.login_user_name);
 //console.log('Session : ' +ss.getSession("login_user_name"));
-window.location.href = 'database.html';
+
  } else if(data.login_user_name != name.trim()){
 document.getElementById('_error').classList.remove("_success");
 document.getElementById('_error').classList.add("_error");
