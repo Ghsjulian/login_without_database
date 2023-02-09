@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>
+      G H S J U L I A N | Ghs Julian | Web Developer And Designer | Ghs Julian
+      Programmer | PHP Developer & Programmer | Programmer Ghs Julian | Web Site
+      Programmer | Computer Oparator | Developer | Hacking | Hacker Developer |
+      Google | Facebook | Youtube | Insagram | Upwork | Ghs | Julian
+    </title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/w3.css" />
+    <script type="module" src="js/server/database.js"></script>
+  </head>
+  <body>
+    <center>
+      <br /><br /><br /><br /><br />
+      <button onclick="popup()" class="w3-btn">Open PopUp</button>
+    </center>
+    <div id="id01" class="w3-modal">
+      <div class="w3-container">
+        <div id="" class="popup w3-animate-top" align="center">
+          <h3>Create Database</h3>
+          <br />
+          <input type="text" placeholder="Enter DB Name" />
+          <button type="submit" id="__submit_btn">Create</button>
+          <button onclick="CanclePopup()" id="__cancle_btn">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      function popup() {
+        document.getElementById("id01").style.display = "block";
+      }
+      function CanclePopup() {
+        document.getElementById("id01").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

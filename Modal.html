@@ -1,0 +1,27 @@
+<!---++++
+
+JUST COPY THIS CODE AND PASTE IT ANYWHERE . BUT ALWAYS REMEMBER YOU MUST INCLUDE
+W3.CSS IN YOUR PROJECT . OTHERWISE IT WON'T WORK !
+
+------>
+
+
+    <div id="id01" class="w3-modal">
+      <div class="w3-container">
+        <div id="" class="popup w3-animate-top" align="center">
+          <h3>Create Database</h3>
+          <br />
+          <input type="text" placeholder="Enter DB Name" />
+          <button type="submit" id="__submit_btn">Create</button>
+          <button onclick="CanclePopup()" id="__cancle_btn">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      function popup() {
+        document.getElementById("id01").style.display = "block";
+      }
+      function CanclePopup() {
+        document.getElementById("id01").style.display = "none";
+      }
+    </script>
