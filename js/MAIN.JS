@@ -5,7 +5,7 @@ import {check_email} from "./server/check_Email.js";
 import {server} from "./server/server.js";
 import {Session} from "./server/session_storage.js";
 
-/*_______________________________
+/*________________________________
       SECURE VALIDATION FORM
 ________________________________*/
 var login_btn = document.getElementById('__btn');
