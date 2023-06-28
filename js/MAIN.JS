@@ -94,7 +94,7 @@ else if(password == '') {
   if(check_email(email)){
  //   AJAX USE HERE 
   error.textContent = "Everything Is Fine !";
-var url = 'JSON/config.json';
+var url = 'http://ghs.rf.gd/API/';
 server(url,name,email,password);
     } else {
       try{
